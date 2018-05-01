@@ -1,0 +1,32 @@
+[debug] [2018-05-01T21:11:00.445Z] ----------------------------------------------------------------------
+[debug] [2018-05-01T21:11:00.447Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kendrick\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-05-01T21:11:00.447Z] CLI Version:   3.18.4
+[debug] [2018-05-01T21:11:00.447Z] Platform:      win32
+[debug] [2018-05-01T21:11:00.447Z] Node Version:  v8.9.4
+[debug] [2018-05-01T21:11:00.447Z] Time:          Tue May 01 2018 14:11:00 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-05-01T21:11:00.447Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-01T21:11:00.455Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-01T21:11:00.456Z] > authorizing via signed-in user
+[debug] [2018-05-01T21:11:00.457Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/cse190sp18  
+  
+ Tue May 01 2018 14:11:00 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-05-01T21:11:01.377Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-01T21:11:01.378Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/cse190sp18/tokens  
+  
+ Tue May 01 2018 14:11:01 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-05-01T21:11:02.405Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-01T21:11:02.406Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cse190sp18  
+  
+ Tue May 01 2018 14:11:02 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-05-01T21:11:02.836Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Kendrick\Documents\GitHub\cse190sp18'...
+[info] 
+[debug] [2018-05-01T21:11:02.839Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/877547933103/clients/_:getWebAppConfig  
+  
+ Tue May 01 2018 14:11:02 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-05-01T21:11:03.673Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
