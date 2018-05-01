@@ -125,81 +125,78 @@ embed,img,object,video{
     direction:ltr
 }
 @font-face{
-    font-family:proxima-nova;
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_regular_macroman/proximanova-regular-webfont.eot");
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_regular_macroman/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_regular_macroman/proximanova-regular-webfont.woff") format("woff"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_regular_macroman/proximanova-regular-webfont.ttf") format("truetype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_regular_macroman/proximanova-regular-webfont.svg#proxima-nova") format("svg");
+    font-family: 'Montserrat', sans-serif;
+    src:url("https://fonts.googleapis.com/css?family=Montserrat:400");
     font-weight:400;
     font-style:normal
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
     @font-face{
-        font-family:proxima-nova;
-        src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_regular_macroman/proximanova-regular-webfont.svg#proxima-nova") format("svg")
+        font-family: 'Montserrat', sans-serif;
+        src:url("https://fonts.googleapis.com/css?family=Montserrat")
     }
 }
 @font-face{
-    font-family:proxima-nova;
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bold_macroman/proximanova-bold-webfont.eot");
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bold_macroman/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bold_macroman/proximanova-bold-webfont.woff") format("woff"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bold_macroman/proximanova-bold-webfont.ttf") format("truetype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bold_macroman/proximanova-bold-webfont.svg#proxima-nova") format("svg");
+
+    font-family: 'Montserrat', sans-serif;
+    src:url("https://fonts.googleapis.com/css?family=Montserrat:700");
     font-weight:700;
     font-style:normal
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
     @font-face{
-        font-family:proxima-nova;
-        src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bold_macroman/proximanova-bold-webfont.svg#proxima-nova") format("svg")
+        font-family: 'Montserrat', sans-serif;
+        src:url("https://fonts.googleapis.com/css?family=Montserrat")
     }
 }
 @font-face{
-    font-family:proxima-nova;
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_italic_macroman/proximanova-regularit-webfont.eot");
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_italic_macroman/proximanova-regularit-webfont.eot?#iefix") format("embedded-opentype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_italic_macroman/proximanova-regularit-webfont.woff") format("woff"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_italic_macroman/proximanova-regularit-webfont.ttf") format("truetype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_italic_macroman/proximanova-regularit-webfont.svg#proxima-nova") format("svg");
+
+    font-family: 'Montserrat', sans-serif;
+    src:url("https://fonts.googleapis.com/css?family=Montserrat:400");
     font-weight:400;
     font-style:italic
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
     @font-face{
-        font-family:proxima-nova;
-        src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_italic_macroman/proximanova-regularit-webfont.svg#proxima-nova") format("svg")
+        font-family: 'Montserrat', sans-serif;
+        src:url("https://fonts.googleapis.com/css?family=Montserrat")
     }
 }
 @font-face{
-    font-family:proxima-nova;
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bolditalic_macroman/proximanova-boldit-webfont.eot");
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bolditalic_macroman/proximanova-boldit-webfont.eot?#iefix") format("embedded-opentype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bolditalic_macroman/proximanova-boldit-webfont.woff") format("woff"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bolditalic_macroman/proximanova-boldit-webfont.ttf") format("truetype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bolditalic_macroman/proximanova-boldit-webfont.svg#proxima-nova") format("svg");
+    font-family: 'Montserrat', sans-serif;
+    src:url("https://fonts.googleapis.com/css?family=Montserrat:400");
     font-weight:700;
     font-style:italic
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
     @font-face{
-        font-family:proxima-nova;
-        src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_bolditalic_macroman/proximanova-boldit-webfont.svg#proxima-nova") format("svg")
+        font-family: 'Montserrat', sans-serif;
+        src:url("https://fonts.googleapis.com/css?family=Montserrat")
     }
 }
 @font-face{
-    font-family:proxima-nova;
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_light_macroman/proximanova-light-webfont.eot");
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_light_macroman/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_light_macroman/proximanova-light-webfont.woff") format("woff"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_light_macroman/proximanova-light-webfont.ttf") format("truetype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_light_macroman/proximanova-light-webfont.svg#proxima-nova") format("svg");
+    font-family: 'Montserrat', sans-serif;
+    src:url("https://fonts.googleapis.com/css?family=Montserrat:200");
     font-weight:200;
     font-style:normal
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
     @font-face{
-        font-family:proxima-nova;
-        src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_light_macroman/proximanova-light-webfont.svg#proxima-nova") format("svg")
+        font-family: 'Montserrat', sans-serif;
+        src:url("https://fonts.googleapis.com/css?family=Montserrat")
     }
 }
 @font-face{
-    font-family:proxima-nova;
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_lightitalic_macroman/proximanova-lightit-webfont.eot");
-    src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_lightitalic_macroman/proximanova-lightit-webfont.eot?#iefix") format("embedded-opentype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_lightitalic_macroman/proximanova-lightit-webfont.woff") format("woff"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_lightitalic_macroman/proximanova-lightit-webfont.ttf") format("truetype"),url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_lightitalic_macroman/proximanova-lightit-webfont.svg#proxima-nova") format("svg");
+
+    font-family: 'Montserrat', sans-serif;
+    src:url("https://fonts.googleapis.com/css?family=Montserrat:200");
     font-weight:200;
     font-style:italic
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
     @font-face{
-        font-family:proxima-nova;
-        src:url("https://campusfont.ucdavis.edu/proxima-nova/proximanova_lightitalic_macroman/proximanova-lightit-webfont.svg#proxima-nova") format("svg")
+        font-family: 'Montserrat', sans-serif;
+        src:url("https://fonts.googleapis.com/css?family=Montserrat")
     }
 }
 form ol,form ul{
@@ -421,7 +418,7 @@ body{
     position:relative;
     background-color:#e5e9ef;
     color:#333;
-    font-family:"proxima-nova","Lucida Grande","Lucida Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family:"Montserrat","Lucida Grande","Lucida Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-image:url(../images/gunrock-linework.svg);
     background-size:100%;
     background-position:top center;
@@ -6756,7 +6753,7 @@ div.ctools-modal-content{
     background-image:none;
     border-radius:0;
     box-shadow:none;
-    font-family:"proxima-nova","Lucida Grande","Lucida Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+    font-family:"Montserrat","Lucida Grande","Lucida Sans","Helvetica Neue",Helvetica,Arial,sans-serif
 }
 #modal-content .form-submit:hover,#modal-content .form-submit:focus{
     background-image:none
