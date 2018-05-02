@@ -2796,6 +2796,10 @@ html {
   .primary-nav {
     background-color: #fff;
   }
+
+  .primary-nav.is-hover {
+    max-height: 600px;
+  }
   
   @media (min-width:992px) {
     .primary-nav {
