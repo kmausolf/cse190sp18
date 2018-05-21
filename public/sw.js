@@ -13,7 +13,7 @@ workbox.routing.registerRoute(
 
   workbox.routing.registerRoute(
     // Cache CSS files
-    /\.(?:js|css)$/,
+    /\.(?:js|css|html)$/,
     // Use cache but update in the background ASAP
     workbox.strategies.staleWhileRevalidate({
       // Use a custom cache name
