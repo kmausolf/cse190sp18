@@ -17,7 +17,8 @@ workbox.routing.registerRoute(
     // Use cache but update in the background ASAP
     workbox.strategies.staleWhileRevalidate({
       // Use a custom cache name
-      cacheName: 'static-resources'
+      cacheName: 'static-resources',
+      cacheableResponse: {statuses: [0,200]}
     }),
   );
   
@@ -36,7 +37,6 @@ workbox.routing.registerRoute(
           maxAgeSeconds: 7 * 24 * 60 * 60,
         })
       ],
-      cacheableResponse: {statuses: [0,200]}
     })
   );
 
