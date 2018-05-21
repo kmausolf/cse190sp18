@@ -40,3 +40,5 @@ workbox.routing.registerRoute(
       ],
     })
   );
+
+  self.addEventListener('fetch',function(e){});
