@@ -1,5 +1,3 @@
-console.log('Service worker ready to roll!');
-
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js');
 
 if (workbox) {
@@ -15,12 +13,12 @@ workbox.routing.registerRoute(
 
   workbox.routing.registerRoute(
     // Cache CSS files
-    /.*\.css/,
+    /\.(?:js|css)$/,
     // Use cache but update in the background ASAP
     workbox.strategies.staleWhileRevalidate({
       // Use a custom cache name
-      cacheName: 'css-cache',
-    })
+      cacheName: 'static-resources'
+    }),
   );
   
   workbox.routing.registerRoute(
@@ -38,7 +36,7 @@ workbox.routing.registerRoute(
           maxAgeSeconds: 7 * 24 * 60 * 60,
         })
       ],
+      cacheableResponse: {statuses: [0,200]}
     })
   );
 
-  self.addEventListener('fetch',function(e){});

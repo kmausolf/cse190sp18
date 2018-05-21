@@ -11,9 +11,8 @@
         "type": "image/jpg",
         "sizes": "720x720"
       }
-
     ],
-    "start_url": "https://cse190sp18.firebaseapp.com",
+    "start_url": "index.html",
     "background_color": "#333",
     "display": "standalone",
     "theme_color": "#002855"

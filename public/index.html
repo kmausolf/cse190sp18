@@ -58,7 +58,7 @@
 <link type="text/css" rel="stylesheet" href="./css/css_Xq2-pW4hw3lF2pMiRK7V0FA-1P6QAYIjTIERD9uuKTI.css" media="all" />
 <link type="text/css" rel="stylesheet" href="./css/css_IhoUiTSixGex6d1R9-HP1I8fKOzQQATGkCCVJILOsDU.css" media="all" />
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color">
+<meta name="theme-color" content="#002855"/>
 
 <!--[if lte IE 8]>
 <link type="text/css" rel="stylesheet" href="./css/css_v8T8jkBGeBddH40ksaDqjSvXLeSMdwqipbjzyihhb2Q.css" media="all" />
@@ -101,7 +101,7 @@ var trackOutboundLink = function(url) {
 if ('serviceWorker' in navigator) {
   // Use the window load event to keep the page load performant
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js');
+    navigator.serviceWorker.register('sw.js');
   });
 }
 </script>
