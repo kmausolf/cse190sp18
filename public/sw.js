@@ -6,14 +6,9 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
-workbox.routing.registerRoute(
-    new RegExp('.*\.js'),
-    workbox.strategies.networkFirst()
-  ); 
-
   workbox.routing.registerRoute(
     // Cache CSS files
-    /\.(?:js|css|html)$/,
+    /\.(?:js|css)$/,
     // Use cache but update in the background ASAP
     workbox.strategies.staleWhileRevalidate({
       // Use a custom cache name
