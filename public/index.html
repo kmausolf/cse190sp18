@@ -79,7 +79,6 @@ a:hover .submenu-toggle__icon:before {
 	.vm-spotlight__indicator{position:absolute;}
 	/* cannot get the svg arrow to work. #arrowic */
 	#banduh {position:relative; height: 150px;bottom: 120;}
-	
 	.listing-image {position: relative; display:block; height:50px;}
 	.capman, .tstud, .amer {position: absolute; float:left; margin:0 10px 10px 0;}
 	.views-field-title {
@@ -100,6 +99,75 @@ a:hover .submenu-toggle__icon:before {
 		right: 1.5%;
 		float: right;
 		width: 64%;
+	}
+	.social-follow > ul > li {
+		width: 100%;
+	}
+	.amp-carousel-button {
+		background-color:rgba(255, 255, 255, 0.5);
+		height:150px;
+		width:50px;
+		background-image:url("./images/chevron.svg");
+
+	}
+	.amp-carousel-button-next {
+		right: 0;
+	}
+	.amp-carousel-button-prev {
+		left: 0;
+	}
+	.amp-carousel-button-next:hover, .amp-carousel-button-prev:hover {
+		background-color:rgba(255, 255, 255, 0.8);
+	}
+	amp-carousel > * {
+		height: 450px;
+	}
+	amp-carousel {
+		margin-bottom:20px;
+	}
+	.caption {
+		position: relative;
+		bottom: 0px;		
+	}
+	.main-carousel .caption {
+		background-color: rgba(255,255,255, 0.8);
+		color: black;
+		height: 10%;
+		padding: 1em;
+		font-style: normal;
+	}
+	@media(min-width: 993px) {
+		#ucdl {
+			width:277.25px;
+			height:44.8px;
+		}
+	}
+	@media(max-width:768px) {
+		.priority-links {
+		text-align: center;
+		}
+		.priority-links > a {
+			display:inline-block;
+			width: 30%;
+		}
+	}
+	@media(max-width:499px) {
+		#mvid{
+			width:482px;
+			height:185px;
+		}
+	}
+	@media(min-width:480px) and (max-width: 992px) {
+		#ucdl {
+			width:178px;
+			height:28px;
+		}
+	}
+	@media(max-width: 479px) {
+		#ucdl {
+			width:123px;
+			height:20px;
+		}
 	}
 </style>
 
@@ -148,7 +216,7 @@ var trackOutboundLink = function(url) {
 			</a>
 			<div class="l-container">
 				<div class="l-branding">
-					<a href="/" title="Home" class="site-logo" rel="home"><amp-img src="./media/1.svg" width="277.25" height="44.8" layout="intrinsic" class="logo" alt="Home"></amp-img></a>
+					<a href="/" title="Home" class="site-logo" rel="home"><amp-img id="ucdl" src="./media/1.svg" width="277.25px" height="44.8px" class="logo" alt="Home" layout="intrinsic"></amp-img></a>
 				</div>
 			</div>
 		</div>
@@ -722,7 +790,7 @@ var trackOutboundLink = function(url) {
 
 		<div class="hero-banner__media">
 			<div class="hero-banner__video-placeholder">
-				<amp-video width="1000px" height="400px" poster="./media/20.jpg" layout="responsive" autoplay>
+				<amp-video id="mvid" poster="./media/20.jpg" layout="fill" autoplay>
 					<source type="video/mp4" src="./media/1.mp4">
 					<div fallback><p>Your browser does not support HTML5 video.</p></div>
 				</amp-video>
