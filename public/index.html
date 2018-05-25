@@ -75,6 +75,32 @@ a:hover .submenu-toggle__icon:before {
 	/* Yo.css minified, reduced */
 	.caption.panopoly-image-quarter{max-width:25%}
 
+	/* Added css */
+	.vm-spotlight__indicator{position:absolute;}
+	/* cannot get the svg arrow to work. #arrowic */
+	#banduh {position:relative; height: 150px;bottom: 120;}
+	
+	.listing-image {position: relative; display:block; height:50px;}
+	.capman, .tstud, .amer {position: absolute; float:left; margin:0 10px 10px 0;}
+	.views-field-title {
+		width:210px; position: relative; left: 80px; bottom:50px; margin:0;
+	}
+	.views-field-title > span a {
+		float:right; position: relative; font-family: sans-serif;
+	}
+	.outdr {margin: 0 15px;}
+	.fash {margin-left: 15px;}
+	.outdr, .fash {
+		width:30.5%;
+		display: inline;
+		float: left;
+	}
+	.sevenre, .pane-social-follow-links {
+		position: relative;
+		right: 1.5%;
+		float: right;
+		width: 64%;
+	}
 </style>
 
 <!--[if lte IE 8]>
@@ -914,23 +940,25 @@ var trackOutboundLink = function(url) {
 			<div class="views-field views-field-field-featured-image">
 			<div class="field-content listing-image">
 				<a href="/majors/blog/career-paths/five-great-government-jobs">
-					<amp-img alt="Man standing in front of Capitol" width="240" height="320" src="./media/24.webp" layout="responsive">
-						<amp-img fallback alt="Man standing in front of Capitol" width="240" height="320" src="./media/24.jpg" layout="responsive"></amp-img>
+					<amp-img class="capman" alt="Man standing in front of Capitol" width="72" height="95" src="./media/24.webp">
+						<amp-img fallback class="capman" alt="Man standing in front of Capitol" width="72" height="95" src="./media/24.jpg"></amp-img>
 					</amp-img>
 				</a>
 			</div>  
-			</div>  
+			
 			<div class="views-field views-field-title">
 				<span class="field-content"><a href="/majors/blog/career-paths/five-great-government-jobs">5 Great Government Jobs and How to Prepare for Them</a></span>
-			</div>  
+			</div> 
+			</div> 
+			
 		</div>
 
 		<div class="views-row views-row-2 views-row-even clearfix">
 			<div class="views-field views-field-field-featured-image">
 			<div class="field-content listing-image">
 				<a href="/majors/blog/exploring-options/female-majority-clubs">
-					<amp-img alt="Two students from Davis Women in Business club pose with achievement certificates." width="240" height="320" src="./media/16.webp" layout="responsive">
-						<amp-img fallback alt="Two students from Davis Women in Business club pose with achievement certificates." width="240" height="320" src="./media/16.jpg" layout="responsive">
+					<amp-img class="tstud" alt="Two students from Davis Women in Business club pose with achievement certificates." width="72" height="95" src="./media/16.webp">
+						<amp-img class="tstud" fallback alt="Two students from Davis Women in Business club pose with achievement certificates." width="72" height="95" src="./media/16.jpg">
 						</amp-img>
 					</amp-img>
 				</a>
@@ -945,8 +973,8 @@ var trackOutboundLink = function(url) {
 			<div class="views-field views-field-field-featured-image">        
 			<div class="field-content listing-image">
 				<a href="/majors/american-studies/what-can-i-do-with-my-american-studies-major">
-					<amp-img alt="Students and faculty from the Department of American studies pose." width="1" height="1.33" src="./media/10.webp" layout="responsive">
-						<amp-img fallback alt="Students and faculty from the Department of American studies pose." width="240" height="320" src="./media/10.jpg" class="panopoly-image-quarter">
+					<amp-img class="amer" alt="Students and faculty from the Department of American studies pose." width="72" height="95" src="./media/10.webp">
+						<amp-img fallback class="amer panopoly-image-quarter" alt="Students and faculty from the Department of American studies pose." width="72" height="95" src="./media/10.jpg">
 						</amp-img>
 					</amp-img>
 				</a>
@@ -1057,12 +1085,11 @@ var trackOutboundLink = function(url) {
 
 		<div class="node__content vm-spotlight__image">
 		<div class="vm-spotlight__indicator">
-			<amp-img width="200" height="200" alt="icon"src="./media/2.svg"></amp-img>
+			<amp-img id="arrowic" width="200" height="200" alt="icon"src="./media/2.svg"></amp-img>
 		</div>
 		<div class="vm-spotlight__shade category-brand__background"></div>
-		<div class="field field--name-field-featured-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even" rel="schema:image" resource="./media/12.jpg">
-			<amp-img alt="A student leads the Cal Aggie Marching Band-uh!" width="600" height="450" src="./media/12.webp">
-				<amp-img fallback alt="A student leads the Cal Aggie Marching Band-uh!" width="600" height="450" src="./media/12.jpg"></amp-img>
+		<div class="field field--name-field-featured-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even" rel="schema:image">
+			<amp-img id="banduh" alt="A student leads the Cal Aggie Marching Band-uh!" width="340" height="250" src="./media/12.jpg">
 			</amp-img>
 		</div></div></div>
 		<span property="schema:name" content="7 Ways to Find Your Community" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/news/7-ways-find-your-community" class="rdf-meta element-hidden"></span>
@@ -1238,8 +1265,8 @@ var trackOutboundLink = function(url) {
 	</div>
 
 
-	<div class="panel-pane pane-fieldable-panels-pane pane-vuuid-dcb36e7a-5e0d-43ad-bcc7-4b84b2f7eac9 box--flush category-brand--california-poppy l-sibling-grid--half pane-bundle-ucdedu-marketing-highlight">
-    	<div class="pane-content ">
+	<div class="panel-pane pane-fieldable-panels-pane pane-vuuid-dcb36e7a-5e0d-43ad-bcc7-4b84b2f7eac9 box--flush category-brand--california-poppy l-sibling-grid--half pane-bundle-ucdedu-marketing-highlight outdr">
+    	<div class="pane-content">
     	<a href="https://www.ucdavis.edu/campus-life/explore-campus/#outdoor-adventure" class="fieldable-panels-pane marketing-highlight marketing-highlight--featured">
 			<div class="marketing-highlight__image">
 			<div class="field field--name-field-featured-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even">
@@ -1258,7 +1285,7 @@ var trackOutboundLink = function(url) {
   		</div>
     </div>
 
-	<div class="panel-pane pane-fieldable-panels-pane pane-vuuid-f2c592f0-16c4-4d52-ac05-ff44e0bcbbe4 box--flush category-brand--western-redbud l-sibling-grid--half pane-bundle-ucdedu-marketing-highlight"> 
+	<div class="panel-pane pane-fieldable-panels-pane pane-vuuid-f2c592f0-16c4-4d52-ac05-ff44e0bcbbe4 box--flush category-brand--western-redbud l-sibling-grid--half pane-bundle-ucdedu-marketing-highlight fash"> 
 		<div class="pane-content ">
 		<a href="https://www.ucdavis.edu/about/facts/fast-facts/#fashion-program" class="fieldable-panels-pane marketing-highlight marketing-highlight--featured">
 			<div class="marketing-highlight__image">
@@ -1279,7 +1306,7 @@ var trackOutboundLink = function(url) {
 	</div>
 
 
-	<div class="panel-pane pane-fieldable-panels-pane pane-vuuid-c638b581-67ba-4b31-a59b-99065e0f3e1e box--flush category-brand--admin-blue pane-title--primary pane-title--bullhorn pane-bundle-video vm-featured-video">
+	<div class="panel-pane pane-fieldable-panels-pane pane-vuuid-c638b581-67ba-4b31-a59b-99065e0f3e1e box--flush category-brand--admin-blue pane-title--primary pane-title--bullhorn pane-bundle-video vm-featured-video sevenre">
 
 		<div class="pane-content">
 		<div class="fieldable-panels-pane">
