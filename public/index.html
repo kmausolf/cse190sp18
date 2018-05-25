@@ -76,16 +76,38 @@ a:hover .submenu-toggle__icon:before {
 	.caption.panopoly-image-quarter{max-width:25%}
 
 	/* Added css */
-	.vm-spotlight__indicator{position:absolute;}
-	/* cannot get the svg arrow to work. #arrowic */
-	#banduh {position:relative; height: 150px;bottom: 120;}
-	.listing-image {position: relative; display:block; height:50px;}
-	.capman, .tstud, .amer {position: absolute; float:left; margin:0 10px 10px 0;}
-	.views-field-title {
-		width:210px; position: relative; left: 80px; bottom:50px; margin:0;
+		/*ucdlogo*/
+	#ucdl {
+		width:277.25px;
+		height:44.8px;
 	}
-	.views-field-title > span a {
-		float:right; position: relative; font-family: sans-serif;
+		/*7wayscommunity*/
+	.vm-spotlight__indicator{position:absolute}
+	/* cannot get the svg arrow to work. #arrowic */
+	.view-sitefarm-articles {height:250px;}
+	#banduh {position:relative; height: 150px;}
+
+		/*blog*/
+	.capman, .tstud, .amer, .listing-image {
+		width: 80px;
+	}
+	.listing-image {
+		position: relative;
+		float: left;
+		margin: 0 10px 20px 0;
+	}
+	.views-field-title {
+		float: left;
+		width:60%;
+	}
+
+		/*badges*/
+	.bdgc {position:relative;width:150px;height:230px;}
+	.bdg {position:absolute;}
+	.bdgcc {position:relative;min-width:150px;min-height:150px;}
+	.bdgt {position:absolute;bottom:0;left:0;min-width:100%;}
+	
+		/*outdoor,fashion*/
 	}
 	.outdr {margin: 0 15px;}
 	.fash {margin-left: 15px;}
@@ -94,6 +116,7 @@ a:hover .submenu-toggle__icon:before {
 		display: inline;
 		float: left;
 	}
+		/*social icons*/
 	.sevenre, .pane-social-follow-links {
 		position: relative;
 		right: 1.5%;
@@ -103,6 +126,7 @@ a:hover .submenu-toggle__icon:before {
 	.social-follow > ul > li {
 		width: 100%;
 	}
+		/*slideshow*/
 	.amp-carousel-button {
 		background-color:rgba(255, 255, 255, 0.5);
 		height:150px;
@@ -136,11 +160,12 @@ a:hover .submenu-toggle__icon:before {
 		padding: 1em;
 		font-style: normal;
 	}
-	@media(min-width: 993px) {
-		#ucdl {
-			width:277.25px;
-			height:44.8px;
+		/*responsive*/
+	@media(max-width:991px) {
+		.capman, .tstud, .amer, .listing-image {
+			width: 200px;
 		}
+		.bdg {right:5%;}
 	}
 	@media(max-width:768px) {
 		.priority-links {
@@ -150,12 +175,23 @@ a:hover .submenu-toggle__icon:before {
 			display:inline-block;
 			width: 30%;
 		}
+		.capman, .tstud, .amer, .listing-image {
+			width: 150px;
+		}
+		.bdgc {width:130px;height:215px;}
+		.bdgcc {min-width:130px;min-height:130px;}
+		.bdgt {padding: 0 10px;}
 	}
 	@media(max-width:499px) {
 		#mvid{
 			width:482px;
 			height:185px;
 		}
+		.capman, .tstud, .amer, .listing-image {
+			width: 106px;
+		}
+		.view-sitefarm-articles {height:180px;}
+		#banduh {position:relative; max-height: 180px;max-width:300px;}
 	}
 	@media(min-width:480px) and (max-width: 992px) {
 		#ucdl {
@@ -168,6 +204,16 @@ a:hover .submenu-toggle__icon:before {
 			width:123px;
 			height:20px;
 		}
+		.capman, .tstud, .amer, .listing-image {
+			width: 80px;
+		}
+	}
+	@media(max-width: 300px) {
+		.capman, .tstud, .amer, .listing-image {
+			width: 70px;
+		}
+		.view-sitefarm-articles {height:130px;}
+		#banduh {position:relative; max-height: 120px;max-width:200px;top:10px;right:10px;}
 	}
 </style>
 
@@ -981,8 +1027,8 @@ var trackOutboundLink = function(url) {
 			<div class="views-field views-field-field-featured-image">
 			<div class="field-content listing-image">
 				<a href="/majors/blog/career-paths/five-great-government-jobs">
-					<amp-img class="capman" alt="Man standing in front of Capitol" width="72" height="95" src="./media/24.webp">
-						<amp-img fallback class="capman" alt="Man standing in front of Capitol" width="72" height="95" src="./media/24.jpg"></amp-img>
+					<amp-img class="capman" layout="responsive" alt="Man standing in front of Capitol" width="72" height="95" src="./media/24.webp">
+						<amp-img fallback class="capman" layout="responsive" alt="Man standing in front of Capitol" width="72" height="95" src="./media/24.jpg"></amp-img>
 					</amp-img>
 				</a>
 			</div>  
@@ -998,8 +1044,8 @@ var trackOutboundLink = function(url) {
 			<div class="views-field views-field-field-featured-image">
 			<div class="field-content listing-image">
 				<a href="/majors/blog/exploring-options/female-majority-clubs">
-					<amp-img class="tstud" alt="Two students from Davis Women in Business club pose with achievement certificates." width="72" height="95" src="./media/16.webp">
-						<amp-img class="tstud" fallback alt="Two students from Davis Women in Business club pose with achievement certificates." width="72" height="95" src="./media/16.jpg">
+					<amp-img class="tstud" layout="responsive" alt="Two students from Davis Women in Business club pose with achievement certificates." width="72" height="95" src="./media/16.webp">
+						<amp-img class="tstud" layout="responsive" fallback alt="Two students from Davis Women in Business club pose with achievement certificates." width="72" height="95" src="./media/16.jpg">
 						</amp-img>
 					</amp-img>
 				</a>
@@ -1014,8 +1060,8 @@ var trackOutboundLink = function(url) {
 			<div class="views-field views-field-field-featured-image">        
 			<div class="field-content listing-image">
 				<a href="/majors/american-studies/what-can-i-do-with-my-american-studies-major">
-					<amp-img class="amer" alt="Students and faculty from the Department of American studies pose." width="72" height="95" src="./media/10.webp">
-						<amp-img fallback class="amer panopoly-image-quarter" alt="Students and faculty from the Department of American studies pose." width="72" height="95" src="./media/10.jpg">
+					<amp-img class="amer" layout="responsive" alt="Students and faculty from the Department of American studies pose." width="72" height="95" src="./media/10.webp">
+						<amp-img fallback class="amer panopoly-image-quarter" layout="responsive" alt="Students and faculty from the Department of American studies pose." width="72" height="95" src="./media/10.jpg">
 						</amp-img>
 					</amp-img>
 				</a>
@@ -1147,30 +1193,31 @@ var trackOutboundLink = function(url) {
     <div class="fieldable-panels-pane">  
 	<div class="paragraphs-items paragraphs-items-field-ucdedu-vertical-link-para paragraphs-items-field-ucdedu-vertical-link-para-full paragraphs-items-full">
 
-	<div class="field field--name-field-ucdedu-vertical-link-para field--type-paragraphs field--label-hidden"><div class="field__items achievement-badges pack"><div class="field__item pack__item even">
+	<div class="field field--name-field-ucdedu-vertical-link-para field--type-paragraphs field--label-hidden"><div class="field__items achievement-badges pack">
+	<div class="bdgc field__item pack__item even">
 		<a href="http://www.ucdavis.edu/about/rankings/" class="vertical-link entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle"  about="" typeof="">
-		    <div class="field field--name-field-ucdedu-vertical-link-image field--type-image field--label-hidden vertical-link__figure">
-		    	<amp-img alt="Veterinary medicine" width="162" height="166" src="./media/5.png"></amp-img>
+		    <div class="bdgcc field field--name-field-ucdedu-vertical-link-image field--type-image field--label-hidden vertical-link__figure">
+		    	<amp-img class="bdg" alt="Veterinary medicine" layout="fill" src="./media/5.png"></amp-img>
 		    </div>
-		    <div class="field field--name-field-ucdedu-vertical-link-title field--type-text field--label-hidden vertical-link__body"><strong>Ranked 1st in the world for veterinary medicine</strong></div>
+		    <div class="bdgt field field--name-field-ucdedu-vertical-link-title field--type-text field--label-hidden vertical-link__body"><strong>Ranked 1st in the world for veterinary medicine</strong></div>
 		</a>
 	</div>
 
-	<div class="field__item pack__item odd">
+	<div class="bdgc field__item pack__item odd">
 		<a href="http://www.ucdavis.edu/about/rankings/" class="vertical-link entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle"  about="" typeof="">
-		    <div class="field field--name-field-ucdedu-vertical-link-image field--type-image field--label-hidden vertical-link__figure">
-		    	<amp-img alt="UC Davis is Ranked 6th Nationally Among Public Universities - Badge with a number 6 and a grad cap" width="162" height="166" src="./media/6.png"></amp-img>
+		    <div class="bdgcc field field--name-field-ucdedu-vertical-link-image field--type-image field--label-hidden vertical-link__figure">
+		    	<amp-img class="bdg" alt="UC Davis is Ranked 6th Nationally Among Public Universities - Badge with a number 6 and a grad cap" layout="fill" src="./media/6.png"></amp-img>
 		    </div>
-		    <div class="field field--name-field-ucdedu-vertical-link-title field--type-text field--label-hidden vertical-link__body"><strong>Ranked 6th nationally for public universities</strong></div>
+		    <div class="bdgt field field--name-field-ucdedu-vertical-link-title field--type-text field--label-hidden vertical-link__body"><strong>Ranked 6th nationally for public universities</strong></div>
 		</a>
 	</div>
 
-	<div class="field__item pack__item even">
+	<div class="bdgc field__item pack__item even">
 		<a href="http://www.ucdavis.edu/about/rankings/" class="vertical-link entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle"  about="" typeof="">
-    		<div class="field field--name-field-ucdedu-vertical-link-image field--type-image field--label-hidden vertical-link__figure">
-    			<amp-img alt="UC Davis is Ranked 1st Nationally and 2nd world wide in Agriculture - Badge Image with #1 Rooted in Leaves" width="162" height="166" src="./media/7.png"></amp-img>
+    		<div class="bdgcc field field--name-field-ucdedu-vertical-link-image field--type-image field--label-hidden vertical-link__figure">
+    			<amp-img class="bdg" alt="UC Davis is Ranked 1st Nationally and 2nd world wide in Agriculture - Badge Image with #1 Rooted in Leaves" layout="fill" src="./media/7.png"></amp-img>
     		</div>
-    		<div class="field field--name-field-ucdedu-vertical-link-title field--type-text field--label-hidden vertical-link__body"><strong>Ranked 1st nationally in agriculture</strong></div>
+    		<div class="bdgt field field--name-field-ucdedu-vertical-link-title field--type-text field--label-hidden vertical-link__body"><strong>Ranked 1st nationally in agriculture</strong></div>
     	</a>
 	</div>
 
