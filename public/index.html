@@ -277,10 +277,10 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
       </a>
       <div class="l-container">
         <div class="l-branding">
-                      <a href="/" title="Home" class="site-logo" rel="home" id="ucdlogo"><img src="./media/1.svg" class="logo" alt="Home" /></a>
+                      <a href="/" title="Home" class="site-logo" rel="home" id="ucdlogotop"><img src="./media/1.svg" class="logo" alt="Home" /></a>
                       <!--mixpanel-->
                       <script>
-                        mixpanel.track_links('ucdlogo', 'Clicked top UCD logo');
+                        mixpanel.track_links('#ucdlogotop', 'Clicked top UCD logo');
                       </script>
                   </div>
 
@@ -620,7 +620,7 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
               <h2><a class="quick-links__title" id="quicklinksbtn">Quick Links<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a></h2>
               <!--mixpanel-->
               <script>
-                mixpanel.track_links('#quicklinksbtn', 'Clicked Quick Links btn')
+                mixpanel.track_links('#quicklinksbtn', 'Clicked Quick Links btn for nav');
               </script>
               <nav class="quick-links is-hidden--visually">
                 <ul class="menu"><li class="menu-2571 first"><a href="http://my.ucdavis.edu/" title="">myUCDavis</a></li>
@@ -712,32 +712,32 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
       
     <div class="pane-content ">
     <div class="priority-links pack">
-  <a href="https://www.ucdavis.edu/majors/#home-priority-link" class="vertical-link pack__item priority-links--badge">
+  <a href="https://www.ucdavis.edu/majors/#home-priority-link" class="vertical-link pack__item priority-links--badge secondary-nav">
   <div class="vertical-link__figure"></div>
   <div class="vertical-link__body">
     <strong>Majors</strong>
   </div>
-</a><a href="https://www.ucdavis.edu/academics/#home-priority-link" class="vertical-link pack__item priority-links--hat">
+</a><a href="https://www.ucdavis.edu/academics/#home-priority-link" class="vertical-link pack__item priority-links--hat secondary-nav">
   <div class="vertical-link__figure"></div>
   <div class="vertical-link__body">
     <strong>Academics</strong>
   </div>
-</a><a href="https://www.ucdavis.edu/admissions/cost/#home-priority-link" class="vertical-link pack__item priority-links--dollar">
+</a><a href="https://www.ucdavis.edu/admissions/cost/#home-priority-link" class="vertical-link pack__item priority-links--dollar secondary-nav">
   <div class="vertical-link__figure"></div>
   <div class="vertical-link__body">
     <strong>Cost</strong>
   </div>
-</a><a href="https://www.ucdavis.edu/calendar/#home-priority-link" class="vertical-link pack__item priority-links--calendar">
+</a><a href="https://www.ucdavis.edu/calendar/#home-priority-link" class="vertical-link pack__item priority-links--calendar secondary-nav">
   <div class="vertical-link__figure"></div>
   <div class="vertical-link__body">
     <strong>Calendar</strong>
   </div>
-</a><a href="https://www.ucdavis.edu/visit/#home-priority-link" class="vertical-link pack__item priority-links--people">
+</a><a href="https://www.ucdavis.edu/visit/#home-priority-link" class="vertical-link pack__item priority-links--people secondary-nav">
   <div class="vertical-link__figure"></div>
   <div class="vertical-link__body">
     <strong>Visit</strong>
   </div>
-</a><a href="https://www.ucdavis.edu/admissions/apply/#home-priority-link" class="vertical-link pack__item priority-links--check-mark">
+</a><a href="https://www.ucdavis.edu/admissions/apply/#home-priority-link" class="vertical-link pack__item priority-links--check-mark secondary-nav">
   <div class="vertical-link__figure"></div>
   <div class="vertical-link__body">
     <strong>Apply</strong>
@@ -747,7 +747,10 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
 </div></div>        </div>
       </div>
     </div>
-    
+    <!--mixpanel-->
+    <script>
+      mixpanel.track_links('.secondary-nav', "Clicked an item in secondary nav");
+    </script>
     <div class="row">
       <div class="col-md-4 radix-layouts-sidebar panel-panel">
         <div class="panel-panel-inner">
@@ -909,7 +912,7 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
   
       
     <div class="pane-content ">
-    <a href="http://www.youvisit.com/tour/ucdavis?pl=v" class="fieldable-panels-pane focal-link">
+    <a href="http://www.youvisit.com/tour/ucdavis?pl=v" class="fieldable-panels-pane focal-link tertiary-nav">
   <div class="focal-link__figure ">
           <div class="field field--name-field-ucdedu-focal-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="./media/1.png" width="189" height="189" alt="Icon for virtual tour" /></div></div></div>      </div>
   <div class="focal-link__body category-brand__text">
@@ -922,7 +925,7 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
   
       
     <div class="pane-content ">
-    <a href="https://www.ucdavis.edu/more-info" class="fieldable-panels-pane focal-link">
+    <a href="https://www.ucdavis.edu/more-info" class="fieldable-panels-pane focal-link tertiary-nav">
   <div class="focal-link__figure ">
           <div class="field field--name-field-ucdedu-focal-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="./media/2.png" width="189" height="189" alt="Icon of an envelope" /></div></div></div>      </div>
   <div class="focal-link__body category-brand__text">
@@ -935,7 +938,7 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
   
       
     <div class="pane-content ">
-    <a href="http://www.alumni.ucdavis.edu/membership" class="fieldable-panels-pane focal-link">
+    <a href="http://www.alumni.ucdavis.edu/membership" class="fieldable-panels-pane focal-link tertiary-nav">
   <div class="focal-link__figure ">
           <div class="field field--name-field-ucdedu-focal-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="./media/3.png" width="189" height="189" alt="banner icon" /></div></div></div>      </div>
   <div class="focal-link__body category-brand__text">
@@ -948,7 +951,7 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
   
       
     <div class="pane-content ">
-    <a href="http://giving.ucdavis.edu" class="fieldable-panels-pane focal-link">
+    <a href="http://giving.ucdavis.edu" class="fieldable-panels-pane focal-link tertiary-nav">
   <div class="focal-link__figure ">
           <div class="field field--name-field-ucdedu-focal-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="./media/4.png" width="189" height="189" alt="icon of a gift" /></div></div></div>      </div>
   <div class="focal-link__body category-brand__text">
@@ -959,6 +962,10 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
     </div>
         </div>
       </div>
+      <!--mixpanel-->
+      <script>
+        mixpanel.track_links('.tertiary-nav', 'Clicked an item tertiary nav');
+      </script>
       <div class="col-md-8 radix-layouts-content panel-panel">
         <div class="panel-panel-inner">
           <div class="panel-pane pane-fieldable-panels-pane pane-vuuid-4a3fb782-d1d8-4009-890f-f6078ba99b12 box--flush category-brand--admin-blue pane-title--plain pane-title--bullhorn pane-bundle-text">
@@ -1009,15 +1016,19 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
     <div class="fieldable-panels-pane" class="fieldable-panels-pane">
     
 <div class="paragraphs-items paragraphs-items-field-ucdedu-vertical-link-para paragraphs-items-field-ucdedu-vertical-link-para-full paragraphs-items-full" class="paragraphs-items paragraphs-items-field-ucdedu-vertical-link-para paragraphs-items-field-ucdedu-vertical-link-para-full paragraphs-items-full">
-  <div class="field field--name-field-ucdedu-vertical-link-para field--type-paragraphs field--label-hidden"><div class="field__items achievement-badges pack"><div class="field__item pack__item even"><a href="http://www.ucdavis.edu/about/rankings/" class="vertical-link entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle"  about="" typeof="" class="entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle">
+  <div class="field field--name-field-ucdedu-vertical-link-para field--type-paragraphs field--label-hidden"><div class="field__items achievement-badges pack"><div class="field__item pack__item even"><a href="http://www.ucdavis.edu/about/rankings/" class="vertical-link entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle rank"  about="" typeof="" class="entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle">
     <div class="field field--name-field-ucdedu-vertical-link-image field--type-image field--label-hidden vertical-link__figure"><img class="lazy lazyload" typeof="foaf:Image" src="./media/5.png" data-lazy="./media/5.png" data-src="./media/5.png" width="162" height="166" alt="Veterinary medicine" /></div><div class="field field--name-field-ucdedu-vertical-link-title field--type-text field--label-hidden vertical-link__body"><strong>Ranked 1st in the world for veterinary medicine</strong></div></a>
-</div><div class="field__item pack__item odd"><a href="http://www.ucdavis.edu/about/rankings/" class="vertical-link entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle"  about="" typeof="" class="entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle">
+</div><div class="field__item pack__item odd"><a href="http://www.ucdavis.edu/about/rankings/" class="vertical-link entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle rank"  about="" typeof="" class="entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle">
     <div class="field field--name-field-ucdedu-vertical-link-image field--type-image field--label-hidden vertical-link__figure"><img class="lazy lazyload" typeof="foaf:Image" src="./media/6.png" data-lazy="./media/6.png" data-src="./media/6.png" width="162" height="166" alt="UC Davis is Ranked 6th Nationally Among Public Universities - Badge with a number 6 and a grad cap" /></div><div class="field field--name-field-ucdedu-vertical-link-title field--type-text field--label-hidden vertical-link__body"><strong>Ranked 6th nationally for public universities</strong></div></a>
-</div><div class="field__item pack__item even"><a href="http://www.ucdavis.edu/about/rankings/" class="vertical-link entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle"  about="" typeof="" class="entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle">
+</div><div class="field__item pack__item even"><a href="http://www.ucdavis.edu/about/rankings/" class="vertical-link entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle rank"  about="" typeof="" class="entity entity-paragraphs-item paragraphs-item-ucdedu-vertical-link-bundle">
     <div class="field field--name-field-ucdedu-vertical-link-image field--type-image field--label-hidden vertical-link__figure"><img class="lazy lazyload" typeof="foaf:Image" src="./media/7.png" data-lazy="./media/7.png" data-src="./media/7.png" width="162" height="166" alt="UC Davis is Ranked 1st Nationally and 2nd world wide in Agriculture - Badge Image with #1 Rooted in Leaves" /></div><div class="field field--name-field-ucdedu-vertical-link-title field--type-text field--label-hidden vertical-link__body"><strong>Ranked 1st nationally in agriculture</strong></div></a>
 </div></div></div></div></div>
   </div>
     </div>
+    <!--mixpanel-->
+    <script>
+      mixpanel.track_links('.rank', 'Clicked on rankings');
+    </script>
 <div class="panel-pane pane-views-panes pane-ucdedu-image-slider-panel-pane-1 box--flush category-brand--admin-blue pane-title--plain pane-title--bullhorn">
   
       
@@ -1240,8 +1251,8 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
       <button type="button" data-role="none" class="slick-prev" id="slideprev" aria-label="previous">Previous</button>            <button type="button" data-role="none" class="slick-next" id="slidenext" aria-label="next">Next</button>    </nav>
       <!--mixpanel-->
       <script>
-        mixpanel.track_links('slideprev', 'Clicked previous slide');
-        mixpanel.track_links('slidenext', 'Clicked next slide');
+        mixpanel.track_links('#slideprev', 'Clicked previous slide');
+        mixpanel.track_links('#slidenext', 'Clicked next slide');
       </script>
   </div>
 </div>  </div>  </div>
@@ -1387,7 +1398,7 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
   <div class="footer-nav__logo"><a href="/" class="active" id="ucdlogobot"><img src="./media/17.svg" class="logo" alt="UC Davis Logo" /></a></div><ul class="menu"><li class="first leaf"><a href="http://www.ucdmc.ucdavis.edu/" title="">UC Davis Health</a></li>
     <!--mixpanel-->
     <script>
-      mixpanel.track_links('ucdlogobot', 'Clicked UCD logo in the footer');
+      mixpanel.track_links('#ucdlogobot', 'Clicked UCD logo in the footer');
     </script>
 <li class="leaf"><a href="http://www.vetmed.ucdavis.edu/vmth/" title="">Veterinary Medicine</a></li>
 <li class="leaf"><a href="https://extension.ucdavis.edu/" title="">UC Davis Extension</a></li>
