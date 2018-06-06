@@ -257,8 +257,11 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
       </a>
       <div class="l-container">
         <div class="l-branding">
-                      <a href="/" title="Home" class="site-logo" rel="home"><img src="./media/1.svg" class="logo" alt="Home" /></a>
-          
+                      <a href="/" title="Home" class="site-logo" rel="home" id="ucdlogo"><img src="./media/1.svg" class="logo" alt="Home" /></a>
+                      <!--mixpanel-->
+                      <script>
+                        mixpanel.track_links('ucdlogo', 'Clicked top UCD logo');
+                      </script>
                   </div>
 
               </div>
@@ -269,7 +272,11 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
         <div class="off-canvas__container">
 
                       <div class="l-search-popup">
-              <button class="search-popup__open js-search-popup__open">Open</button>
+              <button class="search-popup__open js-search-popup__open" id="searchbtn">Open</button>
+              <!--mixpanel-->
+              <script>
+                mixpanel.track_links('#searchbtn', 'Clicked search btn');
+              </script>
 
               <div class="search-popup">
                 <button class="search-popup__close"><span class="search-popup__close-icon">Close</span></button>
@@ -590,7 +597,11 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
           
                     
                       <div class="l-quick-links">
-              <h2><a class="quick-links__title">Quick Links<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a></h2>
+              <h2><a class="quick-links__title" id="quicklinksbtn">Quick Links<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a></h2>
+              <!--mixpanel-->
+              <script>
+                mixpanel.track_links('#quicklinksbtn', 'Clicked Quick Links btn')
+              </script>
               <nav class="quick-links is-hidden--visually">
                 <ul class="menu"><li class="menu-2571 first"><a href="http://my.ucdavis.edu/" title="">myUCDavis</a></li>
 <li class="menu-3303"><a href="https://myadmissions.ucdavis.edu/" title="">MyAdmissions</a></li>
@@ -663,11 +674,12 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
 
               <div class="hero-banner__horizontal-line"></div>
         <div class="hero-banner__buttons">
-                      <a href="#" class="btn--invert hero-banner__play">Play Video</a>
+                      <a href="#" class="btn--invert hero-banner__play" id="playvid">Play Video</a>
                                 <a href="https://www.ucdavis.edu/about/visit/#home-hero" class="btn--invert" id="schedulevisit">Schedule a visit today!</a>
                                 <!-- mixpanel -->
                                 <script>
-                                  mixpanel.track_links('#schedulevisit', 'Clicked Schedule a Visit');
+                                  mixpanel.track_links('#schedulevisit', 'Clicked Schedule btn a Visit');
+                                  mixpanel.track_links('#playvid', 'Clicked Play Video btn for cover video');
                                 </script>
                   </div>
           </div>
@@ -1205,7 +1217,12 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
                 </div>  </div>    
       </div>
     <nav class="slick__arrow">
-      <button type="button" data-role="none" class="slick-prev" aria-label="previous">Previous</button>            <button type="button" data-role="none" class="slick-next" aria-label="next">Next</button>    </nav>
+      <button type="button" data-role="none" class="slick-prev" id="slideprev" aria-label="previous">Previous</button>            <button type="button" data-role="none" class="slick-next" id="slidenext" aria-label="next">Next</button>    </nav>
+      <!--mixpanel-->
+      <script>
+        mixpanel.track_links('slideprev', 'Clicked previous slide');
+        mixpanel.track_links('slidenext', 'Clicked next slide');
+      </script>
   </div>
 </div>  </div>  </div>
     </div>
@@ -1260,9 +1277,13 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
   
   <div class="content">
     <div class="media-youtube-video media-youtube-1">
-  <iframe class="media-youtube-player" width="640" height="390" title="Seven Reasons You&#039;re Going to Find Your Place at UC Davis" src="https://www.youtube.com/embed/Kwvh7gAdGQ0?wmode=opaque&modestbranding=1&rel=0" frameborder="0" allowfullscreen>Video of Seven Reasons You&amp;#039;re Going to Find Your Place at UC Davis</iframe>
+  <iframe class="media-youtube-player" id="sevenrevid" width="640" height="390" title="Seven Reasons You&#039;re Going to Find Your Place at UC Davis" src="https://www.youtube.com/embed/Kwvh7gAdGQ0?wmode=opaque&modestbranding=1&rel=0" frameborder="0" allowfullscreen>Video of Seven Reasons You&amp;#039;re Going to Find Your Place at UC Davis</iframe>
 </div>
   </div>
+  <!--mixpanel-->
+  <script>
+    mixpanel.track_links('#sevenrevid', "Clicked Seven Reasons youtube video");
+  </script>
 
   
 </div>
@@ -1270,7 +1291,11 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
   </div>
 
     <div class="vm-featured-video__body category-brand__background">
-    <h3 class="vm-featured-video__title"><a href="https://www.ucdavis.edu/files/seven-reasons-youre-going-find-your-place-uc-davis">Seven Reasons You're Going to Find Your Place at UC Davis</a></h3>
+    <h3 class="vm-featured-video__title"><a href="https://www.ucdavis.edu/files/seven-reasons-youre-going-find-your-place-uc-davis" id="sevenrecap">Seven Reasons You're Going to Find Your Place at UC Davis</a></h3>
+    <!--mixpanel-->
+    <script>
+      mixpanel.track_links('#sevenrecap', 'Clicked Seven Reasons caption below youtube video');
+    </script>
     <div class="vm-featured-video__meta">
       
       
@@ -1287,26 +1312,32 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
   <h3 class="pane-title">Follow UC Davis</h3>
   <ul class="pack">
     <li class="pack__item">
-      <a class="social-follow__icon social-follow--facebook" title="Facebook" href="https://www.facebook.com/UCDavis">Follow on Facebook</a>
-      <div class="social-follow__title"><a title="Facebook" href="https://www.facebook.com/UCDavis">Facebook</a></div>
+      <a class="social-follow__icon social-follow--facebook socbtn" title="Facebook" href="https://www.facebook.com/UCDavis">Follow on Facebook</a>
+      <div class="social-follow__title"><a class="soctext" title="Facebook" href="https://www.facebook.com/UCDavis">Facebook</a></div>
     </li>
     <li class="pack__item">
-      <a class="social-follow__icon social-follow--twitter" title="Twitter" href="https://twitter.com/ucdavis">Follow on Twitter</a>
-      <div class="social-follow__title"><a title="Twitter" href="https://twitter.com/ucdavis">Twitter</a></div>
+      <a class="social-follow__icon social-follow--twitter socbtn" title="Twitter" href="https://twitter.com/ucdavis">Follow on Twitter</a>
+      <div class="social-follow__title"><a class="soctext" title="Twitter" href="https://twitter.com/ucdavis">Twitter</a></div>
     </li>
     <li class="pack__item">
-      <a class="social-follow__icon social-follow--instagram" title="Instagram" href="https://instagram.com/ucdavis">Follow on Instagram</a>
-      <div class="social-follow__title"><a title="Instagram" href="https://instagram.com/ucdavis">Instagram</a></div>
+      <a class="social-follow__icon social-follow--instagram socbtn" title="Instagram" href="https://instagram.com/ucdavis">Follow on Instagram</a>
+      <div class="social-follow__title"><a class="soctext" title="Instagram" href="https://instagram.com/ucdavis">Instagram</a></div>
     </li>
     <li class="pack__item">
-      <a class="social-follow__icon social-follow--youtube" title="YouTube" href="http://www.youtube.com/ucdavis">Follow on YouTube</a>
-      <div class="social-follow__title"><a title="YouTube" href="http://www.youtube.com/ucdavis">YouTube</a></div>
+      <a class="social-follow__icon social-follow--youtube socbtn" title="YouTube" href="http://www.youtube.com/ucdavis">Follow on YouTube</a>
+      <div class="social-follow__title"><a class="soctext" title="YouTube" href="http://www.youtube.com/ucdavis">YouTube</a></div>
     </li>
     <li class="pack__item">
-      <a class="social-follow__icon social-follow--googleplus" title="Google Plus" href="https://plus.google.com/+ucdavis/posts">Follow on Google Plus</a>
-      <div class="social-follow__title"><a title="Google Plus" href="https://plus.google.com/+ucdavis/posts">Google Plus</a></div>
+      <a class="social-follow__icon social-follow--googleplus socbtn" title="Google Plus" href="https://plus.google.com/+ucdavis/posts">Follow on Google Plus</a>
+      <div class="social-follow__title"><a class="soctext" title="Google Plus" href="https://plus.google.com/+ucdavis/posts">Google Plus</a></div>
     </li>
   </ul>
+  <!--mixpanel-->
+  <script>
+    mixpanel.track_links('.socbtn', "Clicked on social icons");
+    mixpanel.track_links('.soctext', "Clicked on social text");
+  </script>
+
 </div>
   </div>
     </div>
@@ -1333,7 +1364,11 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
         <div class="l-region l-region--footer pack pack--small footer__navs">
     <nav id="block-menu-menu-footer-primary" role="navigation" class="pack__item footer-nav">
       
-  <div class="footer-nav__logo"><a href="/" class="active"><img src="./media/17.svg" class="logo" alt="UC Davis Logo" /></a></div><ul class="menu"><li class="first leaf"><a href="http://www.ucdmc.ucdavis.edu/" title="">UC Davis Health</a></li>
+  <div class="footer-nav__logo"><a href="/" class="active" id="ucdlogobot"><img src="./media/17.svg" class="logo" alt="UC Davis Logo" /></a></div><ul class="menu"><li class="first leaf"><a href="http://www.ucdmc.ucdavis.edu/" title="">UC Davis Health</a></li>
+    <!--mixpanel-->
+    <script>
+      mixpanel.track_links('ucdlogobot', 'Clicked UCD logo in the footer');
+    </script>
 <li class="leaf"><a href="http://www.vetmed.ucdavis.edu/vmth/" title="">Veterinary Medicine</a></li>
 <li class="leaf"><a href="https://extension.ucdavis.edu/" title="">UC Davis Extension</a></li>
 <li class="leaf"><a href="http://ucdavisstores.com/" title="">UC Davis Stores</a></li>
