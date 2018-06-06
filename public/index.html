@@ -145,8 +145,8 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
 <!-- end Mixpanel -->
 <!-- Performance Monitoring -->
 
-<script>
-  (function() {
+<script type="text/javascript">
+  jQuery(document).ready(function() {
     var timingData = 
     {
       "timestamp": new Date(),
@@ -167,82 +167,102 @@ mixpanel.init("66707e223282f3149e7e68f2b3c2a829");</script>
     (function calculate_load_times() {
       // Check performance support
       if (performance === undefined) {
-        console.log("= Calculate Load Times: performance NOT supported");
+        //console.log("= Calculate Load Times: performance NOT supported");
         return;
       }
 
       // Get a list of "resource" performance entries
       var resources = performance.getEntriesByType("resource");
       if (resources === undefined || resources.length <= 0) {
-        console.log("= Calculate Load Times: there are NO `resource` performance records");
+        //console.log("= Calculate Load Times: there are NO `resource` performance records");
         return;
       }
 
-      console.log("= Calculate Load Times");
+      //console.log("= Calculate Load Times");
       for (var i=0; i < resources.length; i++) {
-        console.log("== Resource[" + i + "] - " + resources[i].name);
-        timingData.resourcedata[i].push({"resourcename": resources[i].name});
+        timingData.resourcedata.push({"id": i});
+
+        //console.log("== Resource[" + i + "] - " + resources[i].name);
+        timingData.resourcedata[i]["resourcename"] = resources[i].name;
 
         // Redirect time
         var t = resources[i].redirectEnd - resources[i].redirectStart;
-        console.log("... Redirect time = " + t);
-        timingData.resourcedata[i].push({"redirecttime": t});
+        //console.log("... Redirect time = " + t);
+        timingData.resourcedata[i]["redirecttime"] = t;
 
         // DNS time
         t = resources[i].domainLookupEnd - resources[i].domainLookupStart;
-        console.log("... DNS lookup time = " + t);
-        timingData.resourcedata[i].push({"dnslookuptime": t});
+        //console.log("... DNS lookup time = " + t);
+        timingData.resourcedata[i]["dnslookuptime"] = t;
 
         // TCP handshake time
         t = resources[i].connectEnd - resources[i].connectStart;
-        console.log("... TCP time = " + t);
-        timingData.resourcedata[i].push({"tcptime": t});
+        //console.log("... TCP time = " + t);
+        timingData.resourcedata[i]["tcptime"] = t;
 
         // Secure connection time
         t = (resources[i].secureConnectionStart > 0) ? (resources[i].connectEnd - resources[i].secureConnectionStart) : "0";
-        console.log("... Secure connection time = " + t);
-        timingData.resourcedata[i].push({"secureconntime": t});
+        //console.log("... Secure connection time = " + t);
+        timingData.resourcedata[i]["secureconntime"] = t;
 
         // Response time
         t = resources[i].responseEnd - resources[i].responseStart;
-        console.log("... Response time = " + t);
-        timingData.resourcedata[i].push({"responsetime": t});
+        //console.log("... Response time = " + t);
+        timingData.resourcedata[i]["responsetime"] = t;
 
         // Fetch until response end
         t = (resources[i].fetchStart > 0) ? (resources[i].responseEnd - resources[i].fetchStart) : "0";
-        console.log("... Fetch until response end time = " + t);
-        timingData.resourcedata[i].push({"fetchuntilresponseend": t});
+        //console.log("... Fetch until response end time = " + t);
+        timingData.resourcedata[i]["fetchuntilresponseend"] = t;
 
         // Request start until reponse end
         t = (resources[i].requestStart > 0) ? (resources[i].responseEnd - resources[i].requestStart) : "0";
-        console.log("... Request start until response end time = " + t);
-        timingData.resourcedata[i].push({"reqstartuntilresponseend": t});
+        //console.log("... Request start until response end time = " + t);
+        timingData.resourcedata[i]["reqstartuntilresponseend"] = t;
 
         // Start until reponse end
         t = (resources[i].startTime > 0) ? (resources[i].responseEnd - resources[i].startTime) : "0";
-        console.log("... Start until response end time = " + t);
-        timingData.resourcedata[i].push({"startuntilresponseend": t});
+        //console.log("... Start until response end time = " + t);
+        timingData.resourcedata[i]["startuntilresponseend"] = t;
     }
   })();
 
-  // Write timing data to jsonbin
+  // Grab the current version of the json
   $.ajax({
-    url: 'https://api.jsonbin.io/b/5b171af6c83f6d4cc734aac2',
-    type: 'PUT',
-    contentType: 'application/json',
-    headers: {
+    url: 'https:////api.jsonbin.io/b/5b17343d7a973f4ce57853a0/latest',
+    type: 'GET',
+    headers: { //Required only if you are trying to access a private bin
       'secret-key': "$2a$10$c.SuOPMTdrJw7tnR1s914uDwISfZrARtf2UL3qARQSPJRpeyMUEvS"
     },
-    data: JSON.stringify(timingData),
     success: (data) => {
       console.log(data);
+      data["logs"].push(timingData);
+      var newJSON = data;
+      // Write timing data to jsonbin
+      $.ajax({
+        url: 'https://api.jsonbin.io/b/5b17343d7a973f4ce57853a0',
+        type: 'PUT',
+        contentType: 'application/json',
+        headers: {
+          'secret-key': "$2a$10$c.SuOPMTdrJw7tnR1s914uDwISfZrARtf2UL3qARQSPJRpeyMUEvS"
+        },
+        data: JSON.stringify(newJSON),
+        success: (data) => {
+          console.log(data);
+        },
+        error: (err) => {
+          console.log(err.responseJSON);
+        }
+      });
     },
     error: (err) => {
       console.log(err.responseJSON);
     }
   });
 
-})();
+
+
+});
 </script>
 
 <!-- End of Performance Monitoring -->
